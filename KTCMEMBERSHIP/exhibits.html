@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KTC Membership Website</title><link rel="shortcut icon" href="../assets/img/logo.svg" type="image/svg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+<link href="assets/css/phppot-style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/user-registration.css" rel="stylesheet" type="text/css">
+<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    
+<style> 
+ /* Custom CSS for smaller screens (max-width: 400px) */
+ @media (max-width: 1400px) {
+	 @font-face {
+   font-family: 'MyOtherCustomFont';
+   src: url('assets/css/RifficFreeBold.ttf') format('truetype');
+ }
+	 /* Navbar */
+	 nav {
+		 display: flex;
+		 justify-content: center;
+		 padding: 5px;
+		 background-color: #333;
+	 }
+
+	 nav .navbar-brand {
+		 font-size: 12px;
+	 }
+
+	 /* Menu items in the navigation bar */
+	 .w3-bar-item {
+		 display: block;
+		 text-align: center;
+		 padding: 3px; /* Adjust padding for smaller screens */
+		 font-size: 10px; /* Make the font size smaller */
+		 white-space: nowrap; /* Prevent text from wrapping */
+	 }
+
+	 /* Dropdown content in the navigation bar */
+	 .w3-dropdown-content {
+		 position: absolute;
+		 background-color: #f9f9f9;
+		 min-width: 120px;
+		 z-index: 1;
+	 }
+
+	 .w3-dropdown-content a {
+		 padding: 3px; /* Adjust padding for smaller screens */
+		 display: block;
+		 width: 100%;
+		 color: #000;
+		 text-decoration: none;
+		 font-size: 10px; /* Make the font size smaller */
+	 }       
+ }
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<!-- Add a toggler button for small screens -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<!-- Navigation links -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<!-- Navigation links -->
+					<li class="nav-item">
+						<a href="home.php" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="personalinfo.php" class="nav-link">Personal Info</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">Activities Enrollment</a>
+						<ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+							<li><a href="exhibition.php" class="dropdown-item">Exhibition</a></li>
+							<li><a href="class.php" class="dropdown-item">Class</a></li>
+							<li><a href="steamprogram.php" class="dropdown-item">Steam Program</a></li>
+							<li><a href="product.php" class="dropdown-item">Product</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="redeempoint.php" class="nav-link">Redeem Point</a>
+					</li>
+					<li class="nav-item">
+						<a href="history.php" class="nav-link">History</a>
+					</li>
+				</ul>
+				</div>
+			<a class="navbar-brand d-flex align-items-center ms-sm-auto" href="cart.php">
+				Cart
+			</a>
+			<!-- Logo and brand text -->
+			<a class="navbar-brand d-flex align-items-center ms-sm-auto" href="logout.php">
+				Logout
+			</a>
+		</div>
+	</nav>
+	
+
+<header>
+<section class="jumbotron-fluid text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , url('assets/img/header/edit/H_exhibits.jpg');   background-position: center;  background-repeat: no-repeat; background-size:cover; height: 500px;">
+<div class="container">
+<div class="ktc-SecTitleHeader" style="padding-top: 10%"><h1><br>Exhibits</h1></div>
+</div>
+</section>
+</header>
+
+
+<section class=" ktc-testimonial tester_new text-center" style="background-image: url('assets/img/bg_body.png');   background-position: center;  background-repeat: no-repeat;  background-size: cover;">
+<div class="ktc-SecTitle">
+<h1><br>Floor Plan</h1>
+</div>
+<div class="container">
+<img src="assets/img/Floor plan-01.png" style="max-width:100%;height:auto; ">
+</div>
+<div class="ktc-SecTitle">
+<h1><br>360 Views</h1>
+</div>
+<div class="container-max">
+<!--<iframe width="100%" height="650px" src="https://poly.google.com/view/fZhrMiVDldL/embed?chrome=min" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>-->
+<iframe width="100%" height="650px" src="https://momento360.com/e/u/aecbb559100e45b8a86efb95de628a4d?utm_campaign=embed&utm_source=other&heading=269.3&pitch=-1.74&field-of-view=75&size=medium" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+</div>
+<div class="ktc-SecTitle">
+<h1><br>Exhibits</h1>
+</div>
+<div class="container">
+<div class="card-deck mb-3 text-center">
+<div class="card mb-4" style="background-color: darkcyan; border: 10px solid darkcyan;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+</div>
+<img class="card-img-top" src="assets/img/exhibit/1-10.jpg" alt="Card image cap" style="  border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Enjoy science wonders with a hint of technology</p>
+</div>
+</div>
+<div class="card mb-4" style="background-color: rebeccapurple; border: 10px solid rebeccapurple;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+</div>
+<img class="card-img-top" src="assets/img/exhibit/1-04.jpg" alt="Card image cap" style="  border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Experience the adrenaline rush</p>
+</div>
+</div>
+<div class="card mb-4" style="background-color: deeppink; border: 10px solid deeppink;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+</div>
+<img class="card-img-top" src="assets/img/exhibit/1-09.jpg" alt="Card image cap" style="  border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Stunning creations in just a few clicks away</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="card-deck mb-3 text-center">
+<div class="card mb-4" style="background-color: lightsalmon; border: 10px solid lightsalmon;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+ </div>
+<img class="card-img-top" src="assets/img/exhibit/1-02.jpg" alt="Card image cap" style="border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Talk, move or even dance in your avatar</p>
+</div>
+</div>
+<div class="card mb-4" style="background-color: orange; border: 10px solid orange;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+</div>
+<img class="card-img-top" src="assets/img/exhibit/1-05.jpg" alt="Card image cap" style="  border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Learn basic programming and watch the robot move</p>
+</div>
+</div>
+<div class="card mb-4" style="background-color: deepskyblue; border: 10px solid deepskyblue;
+		border-radius: 10px;">
+<div class="card-header">
+<img class="img" src="assets/img/ktc-logo-2nd.svg" alt="Card image cap" style="padding-bottom: 10px;margin-top: -60px;">
+</div>
+<img class="card-img-top" src="assets/img/exhibit/1-06.jpg" alt="Card image cap" style="  border-radius: 10px;">
+<div class="card-body">
+<p class="card-text text-white">Immerse yourself in the realm of the virtual world</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main >
+
+<p w3-include-html="template/footer.html"></p>
+
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script src="assets/vendor/owl-carousel/js/owl.carousel.js"></script>
+<script src="/assets/js/jquery-3.4.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+w3.includeHTML();
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/642a27934247f20fefe96fb8/1gt2al6al';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

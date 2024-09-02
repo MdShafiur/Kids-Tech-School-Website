@@ -1,0 +1,5 @@
+Invoice Details:
+Student Name: li
+Payment Method: cash
+Class Purchases:
+Class: Programming Dojo (per session), Quantity: 2, Price: 90

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container-fixed {
+            width: 100%; /* Set the width to 100% */
+            max-width: 1200px; /* Set the maximum width as needed */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            /* Adjust background color as needed */
+            padding: 10px 20px;
+            /* Adjust padding as needed */
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            /* Adjust logo height as needed */
+            margin-right: auto; /* Move the logo to the left */
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        .navbar-nav li {
+            margin: 0 10px;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #343a40;
+            /* Adjust text color as needed */
+        }
+
+        @media (max-width: 575px) {
+            .navbar-brand img {
+                height: 40px;
+                /* Adjust logo height for small screens */
+            }
+
+            .navbar-nav li {
+                margin: 0 5px;
+                /* Adjust spacing for small screens */
+            }
+        }
+
+        /* Adjustments for extra space */
+        .navbar-nav li:last-child {
+            margin-right: 0; /* No right margin for the last item */
+        }
+
+        .navbar-nav .nav-item {
+            display: inline-block;
+            margin-right: 10px; /* Adjust the spacing between nav items as needed */
+        }
+       
+    </style>
+</head>
+
+<body>
+	
+	<!--Top Bar-->
+	
+	<div class="headtoppart clearfix">
+	<div class="headerwp clearfix">
+		<div class="headertopleft">
+			<div class="address clearfix">
+				<span><i class="fa fa-map-marker"></i> Rekascape, 63000 Cyberjaya, Selangor </span> 
+				<a href="tel:+603 8320 3800"><i class="fa fa-phone"></i> +6011 5636 3457</a>
+			</div>
+		</div>
+		<div class="headertopright">
+<!--
+							<a class="sign-upin" title="Sign Up" href="https://www.kidztechcentre.com/acc/register">Register</a>
+				<a class="sign-upin" title="Sign In" href="https://www.kidztechcentre.com/acc/login">Login</a>
+						
+-->
+			
+			<a class="facebookicon" title="Facebook" target="_blank" href="https://www.facebook.com/kidztechcentre19/">
+				<i class="fa fa-facebook-f"></i> <span class="mobiletext02">Facebook</span>
+			</a>
+			<a class="facebookicon" title="Instagram" target="_blank" href="https://www.instagram.com/invites/contact/?i=122ml164bvyv8&utm_content=e0czqzv">
+				<i class="fa fa-instagram"></i> <span class="mobiletext02">Instagram</span>
+			</a>
+			<a class="facebookicon" title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCDFeXcF0KDbAaKhHPZTXY_Q">
+				<i class="fa fa-youtube"></i> <span class="mobiletext02">YouTube</span>
+			</a>
+			<a class="facebookicon" title="E-mail" target="_blank" href="mailto:info@kidztechcentre.com">
+				<i class="fa fa-envelope"></i> <span class="mobiletext02">E-mail</span>
+			</a>
+		</div>
+	</div>
+</div>
+	
+	<!--Top Bar-->
+	
+	
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top d-xs-none">
+        <div class="container-fixed">
+            <a href="index.php"><img src="assets/img/asset-1.2.png" alt="logo" height="65"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.php" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="about.html">KidzTechCentre</a>
+        <a class="dropdown-item" href="exhibits.html">Exhibits</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Plan Your Visit
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="getting.html">Getting to KTC</a>
+        <a class="dropdown-item" href="ticketing.html">Fees &amp; Operation Hours</a>
+        <a class="dropdown-item" href="visit.html">Group Visit</a>
+        <a class="dropdown-item" href="promotion.html">Promotions</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        What's Happening
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="education.html">Education</a>
+        
+        </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="KTCMEMBERSHIP/index.php">
+                Enroll Now
+            </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="register.html">Program</a>
+        <a class="dropdown-item" href="https://kidztechcentre.onpay.my/order/form/entrance">Exhibition</a>
+        </div>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="KTCMEMBERSHIP/login.php">Login/Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="KTCMEMBERSHIP/adminlogin.php">Admin Login</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+     
+	
+</body>
+</html>

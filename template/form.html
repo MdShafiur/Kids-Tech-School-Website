@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.center {
+			text-align: center;
+		}
+
+		.required::after {
+        content: "* ";
+        color: red;
+    }
+	</style>
+
+</head>
+<body>
+	<script type="text/javascript"> var submitted=false</script>
+	<iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){window.location='submission.html';}"></iframe>
+	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAZsJIHc775rDFgamUXur86hPGOCNuFDndfIqgCtZbeB8FBA/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+
+		<h1 class="center">Send us a message</h1>
+		<div class="form-element">
+			<span class="required">Email</span>
+			<input type="email" name="emailAddress" required placeholder="Email"/>
+		</div>
+
+		<div class="form-element">
+			<span class="required">Name</span>
+			<input type="text" name="entry.1897498069" required placeholder="Name"/>
+		</div>
+
+		<div class="form-element radio-buttons">
+			<span class="required">My children are</span>
+			<label for="4-6">
+				<input type="radio" name="entry.1909216840" id="4-6" value="4-6" required/>
+				<span>below 7 years old</span>
+			</label>
+			<label for="7-9">
+				<input type="radio" name="entry.1909216840" id="7-9" value="7-9" required/>
+				<span>7-9 years old</span>
+			</label>
+			<label for="10-12">
+				<input type="radio" name="entry.1909216840" id="10-12" value="10-12" required/>
+				<span>10-12 years old</span>
+			</label>
+			<label for="13-17">
+				<input type="radio" name="entry.1909216840" id="13-17" value="13-17" required/>
+				<span>13-17 old</span>
+			</label>
+		</div>
+
+		<div class="form-element">
+			<span class="required">Feel free to let us know in details what you want to share with us</span>
+			<input type="text" name="entry.1945707068" required placeholder="Name"/>
+		</div>
+
+		<button type="submit">Send Message</button>
+	</form>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

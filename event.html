@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Education | KidzTechCentre</title>
+
+	
+<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/owl-carousel/css/owl.theme.default.css" rel="stylesheet" type="text/css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+	<body>
+		
+
+<!--Navbar-->
+		
+<div id="navbar-container"></div>		
+ 
+		
+<!--Navbar-->
+	
+<!--Header-->
+<main role="main" class="flex-shrink-0">
+	
+	<header>
+	  <section class="text-center" style="background-image: url('assets/img/header/edit/H_competition-n-event.jpg');   background-position: center;  background-repeat: no-repeat;
+  background-size: cover; height: 500px;" >
+   <div class="container">
+		 <div class="ktc-SecTitleHeader" style="padding-top: 10%" ><h1><br>Competitions & Events</h1></div>
+	 
+      </p>
+    </div>
+				
+  </section>
+	</header>
+	
+<!--Header-->
+	
+
+		<section class=" ktc-testimonial text-center">
+			<div class="container">
+		<div class="ktc-SecTitle">
+			<h1><br>Exciting competitions & events are coming your way!</h1>
+		</div>
+	
+	<div class="row justify-content-center align-items-center EduCourseDetails">
+			
+
+<!--
+<form class="form-inline">
+  
+    <a href="contact.php" type="submit" class="btn btn-primary btn-block mb-2">Subscribe</a>
+</form>
+
+
+-->
+		
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS7y3Ag6QaU1ioslZyMC06XN21QMGD59VAKokehm1butUOYQ/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+				
+		</div>
+ </div>
+</section>
+	
+	
+</main >	
+	
+<!--Footer Section-->
+
+		<p w3-include-html="template/footer.html"></p>
+		
+<!--Footer Section-->
+
+		
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script> 
+		<script src="assets/vendor/owl-carousel/js/owl.carousel.js"></script>
+	    <script src="/assets/js/jquery-3.4.1.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script>
+w3.includeHTML();
+</script>
+<script>
+	// Function to include the navbar using JavaScript
+	function includeNavbar() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  document.getElementById("navbar-container").innerHTML = this.responseText;
+		}
+	  };
+	  xhttp.open("GET", "template/navbar.html", true);
+	  xhttp.send();
+	}
+  
+	// Call the function to include the navbar
+	includeNavbar();
+  </script>	
+		</body>
+</html>
+	
+
+
+

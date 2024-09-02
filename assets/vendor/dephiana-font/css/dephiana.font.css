@@ -1,0 +1,13 @@
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/3a968a");*/
+  
+@font-face {
+	font-family: 'Dephiana';
+	src: url('../fonts/dephiana.eot');
+	src: url('../fonts/dephiana.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/dephiana.woff2') format('woff2'),
+	url('../fonts/dephiana.woff') format('woff'),
+	url('../fonts/dephiana.ttf') format('truetype');
+}
+ 

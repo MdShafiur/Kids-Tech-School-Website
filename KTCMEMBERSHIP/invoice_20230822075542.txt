@@ -1,0 +1,5 @@
+Invoice Details:
+Student Name: li
+Payment Method: bank
+Class Purchases:
+Class: Japan Language Class (full), Quantity: 3, Price: 2100

@@ -1,0 +1,11 @@
+Invoice Details:
+Student Name: walaun
+Payment Method: bank
+Product Name: KidzTechCentreButtonBadge
+Quantity: 2
+Price: 3
+Total Price: 6
+Product Name: Bionic Worm Crawling Robot
+Quantity: 2
+Price: 15
+Total Price: 30
